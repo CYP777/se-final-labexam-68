@@ -13,4 +13,5 @@ type ProjectProposal struct {
 	DueDate     	time.Time
 	Status      	string
 	RequstedAmount 	float64
+	CoverPath   	string
 }
