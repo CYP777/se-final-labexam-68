@@ -13,5 +13,5 @@ type ProjectProposal struct {
 	DueDate     	time.Time `validate:"required~Due date is required,gtfield=StartDate~Due date must be after start date"`
 	Status      	string `validate:"required~Status is required,oneof=pending approved rejected~Status must be either pending, approved, or rejected"`
 	RequstedAmount 	float64 `validate:"required~Requested amount is required,range(1|999999)~Requested amount must be between 1 and 999,999"`
-	CoverPath   	string `validate:"required~Cover path is required"`
+	CoverPath   	string `validate:"required~Cover path is required"` 
 }
